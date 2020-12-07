@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagementScreen"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:background="@drawable/background_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/title_record"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/columns"
+        android:layout_weight="1"
+        android:stretchColumns="*"
+        android:layout_below="@+id/title_record">
+        <TableRow>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/user_name_T"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/user_name_c"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="@string/Time_T"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+        </TableRow>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/columns"
+                android:id="@+id/data_table"/>
+    </TableLayout>
+
+</RelativeLayout>

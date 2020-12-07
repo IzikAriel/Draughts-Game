@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagementScreen"
+    android:background="@drawable/background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/layout_day_view"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/day_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/sunny" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_below="@id/layout_day_view"
+        android:textColor="@color/BlackColor"
+        android:id="@+id/name_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/name_text"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:src="@drawable/arrow_image"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:id="@+id/arrow_image"/>
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:background="@drawable/management_shape_btn"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@id/name_text"
+            android:id="@+id/computer"
+            android:text="@string/bot_mode"
+            android:onClick="ActionModeBot"/>
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:background="@drawable/management_shape_btn"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/computer"
+            android:text="@string/user_mode"
+            android:id="@+id/user"
+            android:onClick="ActionModeUser"/>
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:text="@string/record_table"
+            android:id="@+id/record_table_btn"
+            android:layout_below="@id/user"
+            android:layout_margin="10dp"
+            android:background="@drawable/management_shape_btn"
+            android:textStyle="bold"
+            android:onClick="MoveToRecordTable"/>
+
+    </LinearLayout>
+</RelativeLayout>

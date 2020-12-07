@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rows">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="30dp"
+        android:id="@+id/layout_results">
+        <TableRow>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name_T"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/user_name"
+                android:layout_marginRight="1dp"
+                android:layout_marginHorizontal="1dp"
+                android:background="@drawable/columns_shape"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Time_T"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:id="@+id/game_time"
+                android:background="@drawable/columns_shape"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

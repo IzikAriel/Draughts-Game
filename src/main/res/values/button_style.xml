@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="button_style">
+        <item name = "android:layout_width">250dp</item>
+        <item name ="android:layout_height">75dp</item>
+        <item name ="android:padding">10dp</item>
+        <item name = "android:gravity">center</item>
+        <item name = "android:textStyle">bold</item>
+        <item name = "android:layout_marginLeft">10dp</item>
+        <item name = "android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/label_btns</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+</resources>
